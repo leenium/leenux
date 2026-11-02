@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux"
-iso_label="ARCH_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Arch Linux <https://archlinux.org>"
-iso_application="Arch Linux Live/Rescue DVD"
+iso_name="leenium"
+iso_label="LEENIUM_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_publisher="Leenium Linux <https://leenium.drunkleen.com>"
+iso_application="Leenium Linux Live ISO"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
-bootmodes=('bios.syslinux'
-           'uefi.systemd-boot')
+bootmodes=('uefi.systemd-boot')
 pacman_conf="pacman.conf"
 airootfs_image_type="squashfs"
-airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86,arm64' '-b' '1M' '-Xdict-size' '1M')
+airootfs_image_tool_options=('-comp' 'zstd' '-Xcompression-level' '20' '-b' '1M' '-processors' '10')
 bootstrap_tarball_compression=('zstd' '-c' '-T0' '--auto-threads=logical' '--long' '-19')
 kernel_params_aarch64="clk_ignore_unused pd_ignore_unused arm64.nopauth"
 file_permissions=(
