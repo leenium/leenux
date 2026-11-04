@@ -127,3 +127,28 @@ xdg-utils
 xfsprogs
 xl2tpd
 zsh
+
+
+# ── Leenium Desktop ───────────────────────────
+hyprland
+quickshell
+sddm
+qt6-wayland
+xorg-xwayland
+
+# ── Audio ─────────────────────────────────────
+pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+wireplumber
+
+# ── Networking ────────────────────────────────
+networkmanager
+
+# ── Desktop utilities ─────────────────────────
+kitty
+ghostty
+polkit-kde-agent
+xdg-desktop-portal-hyprland
+
