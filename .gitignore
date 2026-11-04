@@ -1,0 +1,6 @@
+# ── Build outputs ───────────────────────────────────────────
+/build/
+/out/
+
+# ── The payload is its own git repository ───────────────────
+/leenium/
