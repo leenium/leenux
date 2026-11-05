@@ -1,0 +1,12 @@
+[Unit]
+Description=Compile Leenium dconf defaults
+Before=display-manager.service
+ConditionPathExists=/etc/dconf/db/local.d
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/dconf update
+RemainAfterExit=yes
+
+[Install]
+WantedBy=graphical.target

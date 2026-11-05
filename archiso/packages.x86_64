@@ -148,8 +148,25 @@ networkmanager
 # ── Desktop utilities ─────────────────────────
 kitty
 ghostty
+
+nautilus
+file-roller
+gvfs
+gvfs-mtp
+gtk3
+gtk4
+dconf
+gsettings-desktop-schemas
+adw-gtk-theme
+adwaita-icon-theme
+capitaine-cursors
+ffmpegthumbnailer
+webp-pixbuf-loader
 polkit-kde-agent
 xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
 
 # ── Other utilities ─────────────────────────
 git
+
+
