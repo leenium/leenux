@@ -128,77 +128,86 @@ xl2tpd
 zsh
 
 
-# ── Leenium Desktop ───────────────────────────
+# ── Desktop Environment ───────────────────────
 hyprland
 quickshell
 sddm
 qt6-wayland
 xorg-xwayland
 hyprlock
+hyprsunset
+
+# ── Application Launcher & Notifications ──────
 fuzzel
 mako
+libnotify
 
-# ── Audio ─────────────────────────────────────
+# ── Display & Appearance ──────────────────────
+nwg-displays
+hyprpicker
+brightnessctl
+ttf-jetbrains-mono-nerd
+noto-fonts-emoji
+adw-gtk-theme
+adwaita-icon-theme
+capitaine-cursors
+
+# ── Audio & Bluetooth ─────────────────────────
 pipewire
 pipewire-alsa
 pipewire-pulse
 pipewire-jack
 wireplumber
 pavucontrol
-blueman
 bluez
 bluez-utils
+blueman
+playerctl
 
 # ── Networking ────────────────────────────────
 networkmanager
 
-# ── Desktop utilities ─────────────────────────
+# ── Terminals & Development ───────────────────
 kitty
 ghostty
+neovim
 git
+
+# ── File Management ───────────────────────────
 nautilus
 file-roller
 gvfs
 gvfs-mtp
+ffmpegthumbnailer
+webp-pixbuf-loader
+
+# ── GTK & Desktop Integration ─────────────────
 gtk3
 gtk4
 dconf
 gsettings-desktop-schemas
-adw-gtk-theme
-adwaita-icon-theme
-capitaine-cursors
-ffmpegthumbnailer
-webp-pixbuf-loader
 polkit-kde-agent
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 
-# ── Other utilities ─────────────────────────
-
-# Screenshots, recording, OCR, and clipboard
-wf-recorder
-tesseract
-tesseract-data-eng
-
-# Application bindings
-qalculate-gtk
-btop
-nwg-displays
-noto-fonts-emoji
-
-# Session helpers
-hyprsunset
-jq
-
-# ── browser, editor, clipboard, screenshots, media ──
-firefox
-neovim
-libnotify
-cliphist
-wl-clipboard
+# ── Screenshots & Screen Recording ────────────
 grim
 slurp
 satty
-hyprpicker
-brightnessctl
-playerctl
+wf-recorder
+
+# ── Clipboard Management ──────────────────────
+wl-clipboard
+cliphist
+
+# ── Image Processing & OCR ────────────────────
+imagemagick
+librsvg
+tesseract
+tesseract-data-eng
+
+# ── Applications & System Utilities ───────────
+firefox
+qalculate-gtk
+btop
+jq

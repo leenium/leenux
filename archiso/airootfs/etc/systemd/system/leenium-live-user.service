@@ -9,6 +9,7 @@ Type=oneshot
 ExecCondition=/bin/sh -c '! id -u anakin >/dev/null 2>&1'
 ExecStart=/usr/bin/useradd -m -U -G wheel,video,input,audio -s /bin/bash anakin
 ExecStart=/usr/bin/passwd -d anakin
+ExecStart=-/usr/bin/runuser -u anakin -- env HOME=/home/anakin LEENIUM_PATH=/usr/share/leenium GSETTINGS_BACKEND=memory /usr/share/leenium/bin/leenium-theme-set leenium
 RemainAfterExit=yes
 
 [Install]
