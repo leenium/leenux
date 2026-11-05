@@ -134,6 +134,9 @@ quickshell
 sddm
 qt6-wayland
 xorg-xwayland
+hyprlock
+fuzzel
+mako
 
 # ── Audio ─────────────────────────────────────
 pipewire
@@ -141,6 +144,10 @@ pipewire-alsa
 pipewire-pulse
 pipewire-jack
 wireplumber
+pavucontrol
+blueman
+bluez
+bluez-utils
 
 # ── Networking ────────────────────────────────
 networkmanager
@@ -148,7 +155,7 @@ networkmanager
 # ── Desktop utilities ─────────────────────────
 kitty
 ghostty
-
+git
 nautilus
 file-roller
 gvfs
@@ -167,6 +174,31 @@ xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 
 # ── Other utilities ─────────────────────────
-git
 
+# Screenshots, recording, OCR, and clipboard
+wf-recorder
+tesseract
+tesseract-data-eng
 
+# Application bindings
+qalculate-gtk
+btop
+nwg-displays
+noto-fonts-emoji
+
+# Session helpers
+hyprsunset
+jq
+
+# ── browser, editor, clipboard, screenshots, media ──
+firefox
+neovim
+libnotify
+cliphist
+wl-clipboard
+grim
+slurp
+satty
+hyprpicker
+brightnessctl
+playerctl
