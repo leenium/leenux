@@ -1,0 +1,13 @@
+[Unit]
+Description=Create Leenium Live User
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecCondition=/bin/sh -c '! id -u anakin >/dev/null 2>&1'
+ExecStart=/usr/bin/useradd -m -U -G wheel,video,input,audio -s /bin/bash anakin
+ExecStart=/usr/bin/passwd -d anakin
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
