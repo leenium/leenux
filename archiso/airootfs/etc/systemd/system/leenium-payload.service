@@ -1,0 +1,14 @@
+[Unit]
+Description=Install the Leenium payload into /usr/share/leenium
+ConditionPathExists=/usr/share/leenium.bundle
+ConditionPathExists=!/usr/share/leenium/.git
+Before=leenium-live-user.service display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/git clone --quiet /usr/share/leenium.bundle /usr/share/leenium
+ExecStart=/usr/bin/git config --system --add safe.directory /usr/share/leenium
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

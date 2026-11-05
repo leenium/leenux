@@ -1,5 +1,7 @@
 [Unit]
 Description=Create Leenium Live User
+Wants=leenium-payload.service
+After=leenium-payload.service
 Before=display-manager.service
 
 [Service]

@@ -151,3 +151,5 @@ ghostty
 polkit-kde-agent
 xdg-desktop-portal-hyprland
 
+# ── Other utilities ─────────────────────────
+git
